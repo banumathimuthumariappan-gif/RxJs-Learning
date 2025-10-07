@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
 import { ObservableExampleComponent } from './observable-example/observable-example.component';
 import { MultipleSubscriptionsComponent } from './multiple-subscriptions/multiple-subscriptions.component';
-import { ObservableExerciseComponent } from './observable-exercise/observable-exercise.component';
 import { CounterUnsubscriptionExampleComponent } from './counter-unsubscription-example/counter-unsubscription-example.component';
 import { ColdObservableComponent } from './cold-observable/cold-observable.component';
 import { ChaptersComponent } from './chapters/chapters.component';
+import { CreationFunctionsComponent } from './creation-functions/creation-functions.component';
 
 export const routes: Routes = [
   {
     path: '',
     redirectTo: '/chapters',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'chapters',
@@ -25,10 +25,6 @@ export const routes: Routes = [
     component: MultipleSubscriptionsComponent,
   },
   {
-    path: 'observable-exercise',
-    component: ObservableExerciseComponent,
-  },
-  {
     path: 'counter-unsubscription-example',
     component: CounterUnsubscriptionExampleComponent,
   },
@@ -36,4 +32,8 @@ export const routes: Routes = [
     path: 'cold-observable',
     component: ColdObservableComponent,
   },
+  {
+    path: 'creation-functions',
+    component: CreationFunctionsComponent
+  }
 ];
