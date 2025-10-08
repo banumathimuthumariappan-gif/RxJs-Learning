@@ -5,6 +5,11 @@ import { CounterUnsubscriptionExampleComponent } from './counter-unsubscription-
 import { ColdObservableComponent } from './cold-observable/cold-observable.component';
 import { ChaptersComponent } from './chapters/chapters.component';
 import { CreationFunctionsComponent } from './creation-functions/creation-functions.component';
+import { FilterOperatorComponent } from './filter-operator/filter-operator.component';
+import { MapOperatorComponent } from './map-operator/map-operator.component';
+import { TapOperatorComponent } from './tap-operator/tap-operator.component';
+import { DebounceTimeOperatorComponent } from './debounce-time-operator/debounce-time-operator.component';
+import { CatchErrorOperatorComponent } from './catch-error-operator/catch-error-operator.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +40,25 @@ export const routes: Routes = [
   {
     path: 'creation-functions',
     component: CreationFunctionsComponent
+  },
+  {
+    path: 'filter-operator',
+    component: FilterOperatorComponent
+  },
+  {
+    path: 'map-operator',
+    component: MapOperatorComponent
+  },
+  {
+    path: 'tap-operator',
+    component: TapOperatorComponent
+  },
+  {
+    path: 'debounceTime-operator',
+    component: DebounceTimeOperatorComponent
+  },
+  {
+    path: 'catchError-operator',
+    component: CatchErrorOperatorComponent
   }
 ];
